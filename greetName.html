@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>greetName.html</title>
+    <script type="text/javascript">
+        function greet(){
+            var txtName = document.getElementById("txtName");
+            var userName = txtName.value;
+            alert("Hi, " + userName + "!");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="txtName">Please type your name</label>
+            <input type="text"
+                   id="txtName"/>
+            <button type="button"
+                    onclick="greet()">
+                    submit
+            </button>
+        </fieldset>
+    </form>
+</body>
+</html>
